@@ -37,9 +37,15 @@ export default function Home() {
           </p>
           <a href="https://www.linkedin.com/in/carolina-segura-cordero-855483212/">Link to LinkedIn</a>
         </div>
-
         <div>
           <h1 className='title'>Completed projects</h1>
+
+        </div>
+        <div>
+          <h1 className='title'>Call to action</h1>
+          <h2 className='second_title'>To know more about me...</h2>
+          <h3 className='third_title'>Look my personal infographic!</h3>
+          <a href="/Infografía.pdf">View infographic</a>
         </div>
       </main>
 
