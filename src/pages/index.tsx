@@ -35,7 +35,7 @@ export default function Home() {
           and discover that I not only love software development, but I also enjoy many other things and 
           have more skills and hobbies. You will be able to learn about my academic background.
           </p>
-          <a href="https://www.linkedin.com/in/carolina-segura-cordero-855483212/">Link to LinkedIn</a>
+          <a href="https://www.linkedin.com/in/carolina-segura-cordero-855483212/" target='_blank'>Link to LinkedIn</a>
         </div>
         <div>
           <h1 className='title'>Completed projects</h1>
@@ -46,6 +46,15 @@ export default function Home() {
           <h2 className='second_title'>To know more about me...</h2>
           <h3 className='third_title'>Look my personal infographic!</h3>
           <a href="/Infografía.pdf">View infographic</a>
+        </div>
+        <div>
+          <footer>
+            <h1 className='title'>Contacts and social media</h1>
+            <a href="https://wa.me/50688351690/" target='_blank'>Contact me on WhatsApp</a>
+            <div>
+              <a className='email'>My e-mail: seguracorderocarolina212@gmail.com</a>
+            </div>
+          </footer>
         </div>
       </main>
 
