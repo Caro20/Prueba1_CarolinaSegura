@@ -4,21 +4,29 @@ import { headers } from 'next/dist/client/components/headers'
 
 const inter = Inter({ subsets: ['latin'] })
 
+function clickOnTheButton(nameOfSection: string) {
+  const section = document.getElementById(nameOfSection);
+  if (section) {
+    section.scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+
 export default function Home() {
   return (
     <>
 
       <header>
-
+        
         <button className="menu">Start</button>
-        <button className="menu">Personal introduction</button>
+        <button onClick={() => clickOnTheButton("about_me_section")}>Personal introduction</button>
         <button className="menu">Completed projects</button>
         <button className="menu">Call to action</button>
         <button className="menu">Contacts and social media</button>
 
       </header>
       <main>
-        <div>
+        <div id='about_me_section'>
           <h1 className='title'>About me</h1>
           <p className='description'>
           My name is Carolina and I work in software development. I studied Computer Systems Engineering at 
@@ -28,6 +36,10 @@ export default function Home() {
           have more skills and hobbies. You will be able to learn about my academic background.
           </p>
           <a href="https://www.linkedin.com/in/carolina-segura-cordero-855483212/">Link to LinkedIn</a>
+        </div>
+
+        <div>
+          <h1 className='title'>Completed projects</h1>
         </div>
       </main>
 
