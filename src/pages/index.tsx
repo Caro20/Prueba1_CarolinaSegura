@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <>
 
-      <header>
+      <header className='class="nav justify-content-center'>
 
         <button className="menu">Start</button>
         <button onClick={() => clickOnTheButton("about_me_section")}>Personal introduction</button>
